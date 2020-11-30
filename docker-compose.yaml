@@ -3,7 +3,7 @@ version: '3.5'
 networks:
   backend:
     driver: bridge
-    internal: true
+    internal: false
     
 services:
   db:
