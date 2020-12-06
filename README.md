@@ -25,9 +25,9 @@ Execute `docker-compose up -d` to start container
 
 To connect to container and login to mysql use next credentials:
 
-| Key      | Value     |
-| :------- | :-------- |
-| Host     | 127.0.0.1 |
-| Port     | 3306      |
-| Username | root      |
-| Password | password  |
+| Key      | Value (default) | Where can be changed |
+| :------- | :-------------- | :------------------- |
+| Host     | 127.0.0.1       |                      |
+| Port     | 3306            |                      |
+| Username | root            |                      |
+| Password | password        | .env                 |
