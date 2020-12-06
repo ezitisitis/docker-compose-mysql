@@ -7,6 +7,18 @@ who is interested.
 
 ## Install
 
+### With default credentials
+
+Run `install.sh` file and it will create container with default root password
+
+### With custom credentials
+
+Copy `.env` file and fill with password for `root` user
+```bash
+cp .env.example .env
+vim .env
+```
+
 Execute `docker-compose up -d` to start container
 
 ## Connection
