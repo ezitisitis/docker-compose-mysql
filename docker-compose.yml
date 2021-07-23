@@ -1,8 +1,8 @@
 version: '3.5'
 
 networks:
-  backend:
-    name: mysql57_database
+  database:
+    name: mysql57_network
     driver: bridge
     internal: false
     
@@ -20,4 +20,4 @@ services:
     labels:
       traefik.enbale: "false"
     networks:
-      - backend
+      - database
