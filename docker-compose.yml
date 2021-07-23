@@ -2,6 +2,7 @@ version: '3.5'
 
 networks:
   backend:
+    name: mysql57_database
     driver: bridge
     internal: false
     
