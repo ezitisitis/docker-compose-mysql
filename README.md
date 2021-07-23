@@ -29,7 +29,7 @@ credentials:
 | Key      | Value (default) | Where can be changed |
 | :------- | :-------------- | :------------------- |
 | Host     | 127.0.0.1       |                      |
-| Port     | 3306            |                      |
+| Port     | 3306            | .env                 |
 | Username | root            |                      |
 | Password | password        | .env                 |
 
