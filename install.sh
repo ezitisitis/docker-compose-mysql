@@ -4,4 +4,4 @@ echo "Copy .env.example"
 cp .env.example .env
 
 echo "Launching docker-compose"
-docker-compose up -d
+docker compose up -d
