@@ -5,7 +5,10 @@ networks:
     name: mysql57_network
     driver: bridge
     internal: false
-    
+
+volumes:
+  mysql:
+
 services:
   db:
     image: mysql:5.7
@@ -14,10 +17,10 @@ services:
     ports:
       - "${MYSQL_LOCAL_PORT}:3306"
     volumes:
-      - ./mysql:/var/lib/mysql
+      - mysql:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     labels:
-      traefik.enbale: "false"
+      traefik.enable: "false"
     networks:
       - database
